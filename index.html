@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description"
+    content="INTENT: Invariance and Discrimination-aware Noise Mitigation for Robust Composed Image Retrieval">
+  <meta property="og:title"
+    content="INTENT: Invariance and Discrimination-aware Noise Mitigation for Robust Composed Image Retrieval" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title"
+    content="INTENT: Invariance and Discrimination-aware Noise Mitigation for Robust Composed Image Retrieval">
+  <meta name="twitter:description"
+    content="INTENT: Invariance and Discrimination-aware Noise Mitigation for Robust Composed Image Retrieval">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card"
+    content="INTENT: Invariance and Discrimination-aware Noise Mitigation for Robust Composed Image Retrieval">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords"
+    content="INTENT: Invariance and Discrimination-aware Noise Mitigation for Robust Composed Image Retrieval">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>INTENT: Invariance and Discrimination-aware Noise Mitigation for Robust Composed Image Retrieval</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+<body>
+
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div class="navbar-menu">
+      <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+
+        <div class="navbar-item has-dropdown is-hoverable">
+          <a class="navbar-link">
+            More Research
+          </a>
+          <div class="navbar-dropdown">
+            <a class="navbar-item" href="https://sdu-l.github.io/ENCODER.github.io/">
+              Encoder (AAAI'25)
+            </a>
+            <a class="navbar-item" href="https://zivchen-ty.github.io/HUD.github.io/">
+              HUD (ACM MM'25)
+            </a>
+            <a class="navbar-item" href="https://windlikeo.github.io/MEDIAN.github.io/">
+              MEDIAN (ICASSP'25)
+            </a>
+            <a class="navbar-item" href="https://zivchen-ty.github.io/OFFSET.github.io/">
+              OFFSET (ACM MM'25)
+            </a>
+            <a class="navbar-item" href="https://zhihfu.github.io/PAIR.github.io/">
+              PAIR (ICASSP'25)
+            </a>
+            <a class="navbar-item" href="https://sdu-l.github.io/HABIT.github.io/">
+              HABIT (AAAI'26)
+            </a>
+            <a class="navbar-item" href="https://sdu-l.github.io/REFINE.github.io/">
+              REFINE (TOMM)
+            </a>
+            <a class="navbar-item" href="https://sdu-l.github.io/ReTrack.github.io/">
+              ReTrack (AAAI'26)
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">[AAAI'26] INTENT: Invariance and Discrimination-aware Noise
+              Mitigation for Robust Composed Image Retrieval</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <!--               <sup>*</sup> -->
+              <!-- <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Zhiwei Chen<sup>1</sup></a>,</span> -->
+              <span class="author-block" style="font-weight: 1000;">
+                <a href="https://zivchen-ty.github.io" target="_blank" class="author-link">Zhiwei
+                  Chen<sup>1</sup></a>,
+              </span>
+              <span class="author-block" style="font-weight: 1000;">
+                <a href="https://faculty.sdu.edu.cn/huyupeng1/zh_CN/index.htm" target="_blank"
+                  class="author-link">Yupeng Hu<sup>1*</sup></a>,
+              </span>
+              <span class="author-block" style="font-weight: 1000;">
+                <a href="https://zhihfu.github.io" target="_blank" class="author-link">Zhiheng Fu<sup>1</sup></a>,
+              </span>
+              <span class="author-block" style="font-weight: 1000;">
+                <a href="https://lee-zixu.github.io" target="_blank" class="author-link">Zixu Li<sup>1</sup></a>,
+              </span>
+              <span class="author-block" style="font-weight: 1000;">
+                <span>Jiale Huang<sup>1</sup></span>,
+              </span>
+              <span class="author-block" style="font-weight: 1000;">
+                <a href="https://windlikeo.github.io/HQL.github.io/" target="_blank" class="author-link">Qinlei
+                  Huang<sup>1</sup></a>,
+              </span>
+              <span class="author-block" style="font-weight: 1000;">
+                <a href="https://faculty.sdu.edu.cn/weiyinwei1/zh_CN/index.htm" target="_blank"
+                  class="author-link">Yinwei Wei<sup>1</sup></a>,
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>School of Software, Shandong University
+              </span>
+              <span class="eql-cntrb"><small><br><sup>*</sup>Corresponding author.</small></span>
+
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+
+                <span class="link-block">
+                  <a href="" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper Coming Soon</span>
+                  </a>
+                </span>
+
+                <!-- <span class="link-block">
+                  <a href=""
+                    target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-google-drive"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span> -->
+
+
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <div class="item">
+              <div class="columns is-centered has-text-centered">
+                <div class="column is-fifths-fifths">
+                  <!-- Your image here -->
+                  <img src="static/images/Abstract.png" alt="MY ALT TEXT" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+  <!-- <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Composed Image Retrieval (CIR) is a challenging image retrieval paradigm that enables to retrieve target
+              images based
+              on multimodal queries consisting of reference images and
+              modification texts. Although substantial progress has been
+              made in recent years, existing methods assume that all samples are correctly matched. However, in
+              real-world scenarios,
+              due to high triplet annotation costs, CIR datasets inevitably
+              contain annotation errors, resulting in incorrectly matched
+              triplets. To address this issue, the problem of Noisy Triplet
+              Correspondence (NTC) has attracted growing attention. We
+              argue that noise in CIR can be categorized into two types:
+              cross-modal correspondence noise and modality-inherent
+              noise. The former arises from mismatches across modalities,
+              whereas the latter originates from intra-modal background interference or visual factors irrelevant to the
+              coarse-grained
+              modification annotations. However, modality-inherent noise
+              is often overlooked, and research on cross-modal correspondence noise remains nascent. To tackle above
+              issues, we
+              propose the Invariance and discrimiNaTion-awarE Noise
+              neTwork (INTENT), comprising two components: Visual In-
+              variant Composition and Bi-Objective Discriminative Learning, specifically designed to handle the
+              two-aspect noise. The
+              former applies causal intervention on the visual side via Fast
+              Fourier Transform (FFT) to generate intervened composed
+              features, enforcing visual invariance and enabling the model
+              to ignore modality-inherent noise during composition. The
+              latter adopts collaborative optimization with both positive and
+              negative samples, and constructs a scalable decision boundary that dynamically adjusts decisions based on
+              the loyalty
+              degree, enabling robust correspondence discrimination. Extensive experiments on two widely used benchmark
+              datasets
+              demonstrate the superiority and robustness of INTENT.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+
+  <!-- Image carousel -->
+  <!-- <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container  has-text-centered">
+        <h2 class="title is-3">Framework: segmentatiOn-based Focus shiFt reviSion nETwork (OFFSET)</h2>
+        <div class="item">
+          <img src="static/images/Framework.png" alt="MY ALT TEXT" />
+          <h2 class="subtitle has-text-centered">
+            The proposed OFFSET consists of three key modules: (a) Dominant Portion Segmentation, (b) Dual Focus
+            Mapping,
+            and (c) Textually Guided Focus Revision, where (a) and (b) collectively form the feature extractor.
+          </h2>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </section> -->
+  <!-- End image carousel -->
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-three-fifths">
+          <h2 class="title is-3">Noise Types and Decision Boundaries in CIR</h2>
+          <div class="item">
+            <div class="columns is-centered has-text-centered">
+              <div class="column is-three-fifths">
+                <!-- Your image here -->
+                <img src="static/images/Intro.png" alt="MY ALT TEXT" />
+                <h2 class="subtitle has-text-centered has-text-justified">
+                  (a) shows typical Modality-inherent Noise in CIR.
+                  (b) reveals Cross-modal Correspondence Noise. (c) presents
+                  two cases: left successfully retrieves target with low confidence (50%), while right fails with high
+                  confidence (70%),
+                  illustrating varying decision boundaries in retrievals.
+                </h2>
+              </div>
+            </div>
+          </div>
+          <br>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container  has-text-centered">
+        <h2 class="title is-3">Framework: Invariance and discrimiNaTion-awarE Noise neTwork (INTENT)</h2>
+        <div class="item">
+          <img src="static/images/Framework.png" alt="MY ALT TEXT" />
+          <h2 class="subtitle has-text-centered">
+            The framework of our proposed INTENT. We designed (a) Visual Invariant Composition and (b) Bi-Objective
+            Discriminative
+            Learning, to mitigate modality-inherent noise and cross-modal correspondence noise, respectively.
+          </h2>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </section>
+
+  </section>
+  <section class="hero is-small">
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h2 class="title is-3">Experiment</h2>
+        <!-- <div id="results-carousel" class="carousel results-carousel"> -->
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/MainTable_FashionIQ.png" alt="MY ALT TEXT" />
+          <h2 class="subtitle has-text-centered">
+            Performance comparison on the FashionIQ validation set in terms of R@K(%). The best and second-best results
+            are
+            highlighted in bold and underline, respectively.
+          </h2>
+        </div>
+        <br>
+        <div class="item">
+          <!-- Your image here -->
+          <img src="static/images/MainTable_CIRR.png" alt="MY ALT TEXT" />
+          <h2 class="subtitle has-text-centered">
+            Performance comparison on the CIRR test set in terms of R@K(%) and Rsub@K(%). The best and second-best
+            results are
+            highlighted in bold and underline, respectively.
+          </h2>
+        </div>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-two-fifths">
+            <div class="item">
+              <!-- Your image here -->
+              <img src="static/images/ablation_A.png" alt="MY ALT TEXT" />
+              <h2 class="subtitle has-text-centered">
+                The ablation study for modules of INTENT.
+              </h2>
+            </div>
+          </div>
+        </div>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-two-fifths">
+            <div class="item">
+              <!-- Your image here -->
+              <img src="static/images/ablation_B.png" alt="MY ALT TEXT" />
+              <h2 class="subtitle has-text-centered">
+                The ablation study for loss functions of INTENT.
+              </h2>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-two-fifths">
+            <div class="item">
+              <img src="static/images/Case.png" alt="MY ALT TEXT" />
+              <h2 class="subtitle has-text-centered">
+                Case Study on CIRR and FashionIQ.
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+
+  <!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+        Coming Soon
+      </code></pre>
+    </div>
+  </section>
+  <!--End BibTex citation -->
+  <!-- volume={x},
+number={x},
+pages={x--x}, -->
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-1">
+          Cluster Map
+        </div>
+        <div class="column is-8">
+          <div class="content">
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the source code of this website, we just ask that you link back to this page in the
+              footer. <br> This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Statcounter tracking code -->
+
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+
+</body>
+
+</html>
